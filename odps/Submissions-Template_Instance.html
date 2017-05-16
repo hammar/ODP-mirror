@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="generator" content="MediaWiki 1.13.2">
+		<meta name="keywords" content="Submissions:Template Instance,TemplatePatternBeforeAndAfter.png,QualityCommittee,CsongorNyulas,CreationDate,ReviewAboutVersion,BenedictoRodriguezCastro about Template Instance,BorisVillazón-Terrazas about Template Instance,MariaPoveda about Template Instance,Literal Reification,General">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Template_Instance_files/SFA_main.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Template_Instance_files/SMW_custom.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Template_Instance_files/main.css">
+		<link rel="stylesheet" type="text/css" href="./Submissions-Template_Instance_files/style.php">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Template_Instance_files/fonts-min.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Template_Instance_files/tabview.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Template_Instance_files/headertabs.css">
+		<link rel="shortcut icon" href="http://ontologydesignpatterns.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://ontologydesignpatterns.org/wiki/opensearch_desc.php" title="Odp (en)">
+		<link rel="alternate" type="application/rss+xml" title="Odp RSS Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="Odp Atom Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+		<title>Submissions:Template Instance - Odp</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wiki/skins/common/shared.css?164";
+			@import "/wiki/skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="./Submissions-Template_Instance_files/commonPrint.css">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wiki/skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/wiki/skins";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/wiki";
+var wgScript = "/wiki/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://ontologydesignpatterns.org";
+var wgCanonicalNamespace = "Submissions";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 500;
+var wgPageName = "Submissions:Template_Instance";
+var wgTitle = "Template Instance";
+var wgAction = "view";
+var wgArticleId = "3339";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "11178";
+var wgVersion = "1.13.2";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="./Submissions-Template_Instance_files/wikibits.js"><!-- wikibits js --></script><style type="text/css">@import "/wiki/skins/monobook/KHTMLFixes.css";</style>
+		<!-- Head Scripts -->
+<script type="text/javascript">/*<![CDATA[*/
+		
+		sfaCreateRedAsterisk=function(){
+			var redAsterisk=document.createElement('SPAN');
+			redAsterisk.setAttribute('class','sfaRedAsterisk');
+			redAsterisk.setAttribute('className','sfaRedAsterisk');
+			redAsterisk.setAttribute('title','This is a mandatory field');
+			redAsterisk.innerHTML='&#x2a;';
+			return redAsterisk;	
+		}
+		sfaCreateAdvise=function(){
+			var advise = document.createElement('DIV');
+			advise.setAttribute('class','sfaMandatoryAdvise');
+			advise.setAttribute('className','sfaMandatoryAdvise');
+			advise.innerHTML='Mandatory fields are marked by: &#x2a;';
+			return advise;	
+		}
+		sfaSetRedAsteriskForMandatoryFields = function () {
+			
+			applyRedAsterisk = function ( fields ) {
+				var hasIt=false;
+				for ( var ix in fields ) {
+					if( ! fields[ix].getAttribute ) continue;
+					
+					var type = fields[ix].getAttribute('type');
+					if( type && type.toLowerCase() == 'checkbox' ) continue;
+					var cls = fields[ix].getAttribute('class');
+					cls = cls ? cls : fields[ix].getAttribute('className');
+					
+					if( cls && cls.indexOf('mandatoryField') != -1 ){
+						hasIt=true;
+						fields[ix].parentNode.insertBefore(sfaCreateRedAsterisk(),fields[ix].nextSibling);
+					}
+				}
+				return hasIt;			
+			}
+			
+			var frms = document.getElementsByTagName( 'FORM' );
+			for(var ix in frms){
+				
+				if( ! frms[ix].getElementsByTagName ) continue;
+				frms[ix].hasAsterisk = false;
+				hasIt=new Array();
+				hasIt[0] = applyRedAsterisk( frms[ix].getElementsByTagName('SELECT') );
+				hasIt[1] = applyRedAsterisk( frms[ix].getElementsByTagName('INPUT') );
+				hasIt[2] = applyRedAsterisk( frms[ix].getElementsByTagName('TEXTAREA') );
+				hasIt[3] = applyRedAsterisk( frms[ix].getElementsByTagName('SPAN') );
+				frms[ix].hasAsterisk = (hasIt[0]||hasIt[1]||hasIt[2]||hasIt[3]) ?true:false;
+				
+				if(frms[ix].hasAsterisk && frms[ix].insertBefore) 
+					frms[ix].insertBefore(sfaCreateAdvise(), frms[ix].firstChild);
+			}
+		}
+		window.onloadFuncts.push(sfaSetRedAsteriskForMandatoryFields);
+/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/
+
+	sfaRenderListboxBag=function(_e){
+		var bag = document.createElement('span');
+		bag.setAttribute('class','sfaListboxBag');
+		bag.setAttribute('className','sfaListboxBag');
+		bag.setAttribute('id','sfaListboxBag'+_e.getAttribute('id'));
+		bag.innerHTML=sfaGetListboxValues(_e);
+		document.getElementById(_e.getAttribute('id')).parentNode.insertBefore(bag,_e);
+	}
+	sfaUpdateListboxBag=function(_e){
+		if(_e == null) _e = this;
+		document.getElementById('sfaListboxBag'+_e.getAttribute('id')).innerHTML=sfaGetListboxValues(_e);
+	}
+	sfaGetListboxValues=function(elem){
+		var svalues = "";
+		for(var opt in elem.options){
+			if(elem.options[opt] && elem.options[opt].selected == true) {
+				if(svalues!="") svalues +=", "
+				svalues +='<span id="sfaListboxBag'+ elem.options[opt].value +'">' + elem.options[opt].innerHTML + '</span>';
+			}
+		}
+		var msg = '<br><span class="sfaInlineMsg">CTRL+CLICK to add/remove elements:</span>';
+		return ( (svalues=='')? 'Nothing selected' : svalues ) + msg;
+	}
+ 	sfaInitListbox=function(){
+	 	var listboxes=document.getElementsByTagName('SELECT');
+	 	for(var ix in listboxes){
+	 		if(listboxes[ix] && listboxes[ix].getAttribute && (listboxes[ix].getAttribute('multiple')!=null)  && (listboxes[ix].multiple && listboxes[ix].multiple==true)){
+	 			sfaRenderListboxBag(listboxes[ix]);
+				listboxes[ix].setAttribute('onchange','sfaUpdateListboxBag(this)');
+				if( listboxes[ix].attachEvent )
+					listboxes[ix].onchange=sfaUpdateListboxBag;
+	 		}
+	 	}
+ 	}
+ 	window.onloadFuncts.push(sfaInitListbox);
+/*]]>*/</script>		<script type="text/javascript" src="./Submissions-Template_Instance_files/SMW_tooltip.js"></script>
+		<script type="text/javascript" src="./Submissions-Template_Instance_files/ajax.js"></script>
+		<script type="text/javascript" src="./Submissions-Template_Instance_files/utilities.js"></script>		<script type="text/javascript" src="./Submissions-Template_Instance_files/tabview-min.js"></script>		<script type="text/javascript" src="./Submissions-Template_Instance_files/event-min.js"></script>		<script type="text/javascript" src="./Submissions-Template_Instance_files/history-min.js"></script>		<script type="text/javascript" src="./Submissions-Template_Instance_files/headertabs.js"></script>		<link rel="stylesheet" type="text/css" href="./Submissions-Template_Instance_files/SMW_custom.css">
+		<script type="text/javascript" src="./Submissions-Template_Instance_files/SMW_sorttable.js"></script>
+				<link rel="alternate" type="application/rdf+xml" title="Submissions:Template Instance" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ExportRDF/Submissions:Template_Instance&amp;xmlmime=rdf">
+
+		<script type="text/javascript" src="./Submissions-Template_Instance_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=monobook";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-500 ltr page-Submissions_Template_Instance">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Submissions:Template Instance</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Odp</h3>
+			<div id="contentSub">This article has assigned reviews <br>Review about this article has been done. </div>
+									<div id="jump-to-nav">Jump to: <a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance#column-one">navigation</a>, <a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance#searchInput">search</a></div>			<!-- start content -->
+			<p><br>
+</p>
+<div style="border:2px solid #DD7300;margin:auto;padding:2px;margin-bottom:10px;overflow:auto"><div style="display:none;"><div style="float:left;padding:0px;margin-right:20px;"><a href="http://ontologydesignpatterns.org/wiki/Image:Certified.png" class="image" title="Certified.png"><img alt="" src="./Submissions-Template_Instance_files/70px-Certified.png" width="70" height="70" border="0"></a></div> <b>This pattern has been certified.</b>
+<p>Related submission, with evaluation history, can be found <strong class="selflink">here</strong>
+</p>
+</div><div style="">
+<table>
+
+<tbody><tr>
+<td><a href="http://ontologydesignpatterns.org/wiki/Image:Working.gif" class="image" title="Working.gif"><img alt="" src="./Submissions-Template_Instance_files/70px-Working.gif" width="70" height="70" border="0"></a>
+</td><td>If you are a member of <a href="http://ontologydesignpatterns.org/wiki/QualityCommittee" title="QualityCommittee"> quality committee</a> please visit the
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;&amp;action=evaluation" rel="nofollow">evaluation section</a>
+</p><p>If you are author of this proposal or you want to contribute to this pattern's review, you can:
+</p>
+<div style="margin-left:20px;padding-left:10px; border-left:2px dotted #4c2e8d">
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;&amp;action=evaluation" rel="nofollow">ask for a review </a>
+</p><p><a href="http://ontologydesignpatterns.org/wiki/Special:AddData/Content_OP_Proposal_Open_Review_Form?Content_OP_Proposal_Review_Template[SubmittedBy]=193.10.209.201&amp;Content_OP_Proposal_Review_Template[ContentOPUnderReview]=Template%20Instance&amp;Content_OP_Proposal_Review_Template[RevisionID]=11178&amp;Content_OP_Proposal_Review_Template[CreationDate]=2017-05-16&amp;contentop=Template%20Instance">post your open review</a>
+</p><p>specify if this revision <a href="http://ontologydesignpatterns.org/wiki/Special:EditData/Takes_in_account_Review_Form/Submissions:Template_Instance" class="external text" title="http://ontologydesignpatterns.org/wiki/Special:EditData/Takes_in_account_Review_Form/Submissions:Template_Instance" rel="nofollow">takes in account any of the review(s)</a>
+</p><p><a href="http://ontologydesignpatterns.org/wiki/Special:AddData/Scenario_Form?Scenario_Template[ScenarioOf]=Submissions:Template%20Instance">add a new scenario for Template Instance</a>
+</p>
+</div>
+<p>In general, it could be useful to visit the <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;&amp;action=evaluation" rel="nofollow">evaluation section</a> to have information about the evaluation process of this proposal
+</p><p><i>Current revision ID:</i> <b>11178</b>
+</p>
+</td></tr></tbody></table></div></div>
+<a name="Graphical_representation"></a><h1> <span class="mw-headline">Graphical representation</span></h1>
+<p><b>Diagram</b>
+</p>
+<div style="margin:auto;margin-bottom:10px;border:1px dotted #3633a4; overflow:auto;text-align:center;padding:5px;">
+<p><a href="http://ontologydesignpatterns.org/wiki/Image:TemplatePatternBeforeAndAfter.png" class="image" title="Image:TemplatePatternBeforeAndAfter.png"><img alt="Image:TemplatePatternBeforeAndAfter.png" src="./Submissions-Template_Instance_files/TemplatePatternBeforeAndAfter.png" width="1500" height="520" border="0"></a>
+</p>
+</div>
+<a name="General_description"></a><h1> <span class="mw-headline">General description</span></h1>
+<table class="contentOPTemplate">
+
+<tbody><tr>
+<th> Name:
+</th><td> Template Instance
+</td></tr>
+<tr>
+<th> Submitted by:
+</th><td> <a href="http://ontologydesignpatterns.org/wiki/User:CsongorNyulas" title="User:CsongorNyulas">CsongorNyulas</a>
+</td></tr>
+<tr>
+<th> Also Known As:
+</th><td>
+</td></tr>
+<tr>
+<th> Intent:
+</th><td> The Template Instance pattern proposes a way of reducing the number of reified instances and the related property assertion axioms in an ontology, especially for the cases in which the reified relations are identical for multiple entities.
+</td></tr>
+<tr>
+<th> Domains:
+</th><td>
+<p><a href="http://ontologydesignpatterns.org/wiki/Community:General" title="Community:General">General</a>
+</p>
+</td></tr>
+<tr>
+<th> Competency Questions:
+</th><td>
+</td></tr>
+<tr>
+<th> Solution description:
+</th><td> The pattern proposes to use the same “template” instance as the value of a reified property for multiple subjects (rather than having multiple copies of the same reified instance). The diagram presents an example of the usage of the pattern, for an easier understanding. The individuals <code style="font-size:larger;">x1</code>, <code style="font-size:larger;">x2</code> and <code style="font-size:larger;">x3</code> have a reified property <code style="font-size:larger;">p</code> that have as values the reified individuals, <code style="font-size:larger;">y1</code>, <code style="font-size:larger;">y2</code> and <code style="font-size:larger;">y3</code>, respectively. In OWL, we would have object  property assertions: <code style="font-size:larger;">(x1 p y1)</code>, <code style="font-size:larger;">(x2 p y2)</code>, <code style="font-size:larger;">(x3 p y3)</code>. The properties for the reified individuals, <code style="font-size:larger;">y1</code>, <code style="font-size:larger;">y2</code> and <code style="font-size:larger;">y3</code> are all identical: <code style="font-size:larger;">(y_ p1  foo)</code>, <code style="font-size:larger;">(y_ p2 1.0)</code> and <code style="font-size:larger;">(y_ p3 z)</code>.
+<p>The pattern proposes to create a template instance, <code style="font-size:larger;">y_tmpl</code> having the common values as its property values:
+<code style="font-size:larger;">(y_tmpl p1 foo), (y_tmpl p2 1.0), (y_tmpl p3 z)</code>
+</p><p>The template instance would be used as the value for the reified property for <code style="font-size:larger;">x1</code>, <code style="font-size:larger;">x2</code> and <code style="font-size:larger;">x3</code>:
+<code style="font-size:larger;">(x1 p y_tmpl), (x2 p y_tmpl), (x3 p y_tmpl)</code>
+</p><p>In addition, we will also add one annotation property, <code style="font-size:larger;">isTemplate:true</code>, on <code style="font-size:larger;">y_tmpl</code> to mark that it as a template instance.
+The intention is that the template instance is immutable, i.e., the property values of the template instance cannot be changed.
+</p><p><br>
+In the case that a user would like to change a property value of the reified relation, a clone of the template instance would be created and the change would occur on the clone. An ontology editor would use the <var>isTemplate</var> annotation property to check that a certain instance cannot be modified, and it should rather create a clone.
+</p><p>The right side of the diagram gives an example of this situation. Say that at a given time t<sub>0</sub>, there was an additional x4 individual that had the template instance as the value for p.
+</p><p>At t<sub>0</sub>: <code style="font-size:larger;">(x4 p y_tmpl)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(y_tmpl p1 foo), (y_tmpl p2 1.0), (y_tmpl p3 z)</code>
+</p><p>Later, at time t<sub>1</sub>, the user decides to change the value <code style="font-size:larger;">p1</code> on x4 from “foo” to “bar”. The ontology editor (or the user, if there is no support in the tool), will see the <var>isTemplate</var> annotation property on <code style="font-size:larger;">y_tmpl</code> as set on true, and it will create a clone of it, <code style="font-size:larger;">y_tmpl_modif</code>, by cloning also all the object and data property axioms. Then, it will change the value of <code style="font-size:larger;">p1</code> on <code style="font-size:larger;">y_tmpl_modif</code>. So, the result will be:
+</p><p>At t<sub>1</sub>: <code style="font-size:larger;">(x4 p y_tmpl_modif)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(y_tmpl_modif p1 bar), (y_tmpl_modif p2 1.0), (y_tmpl_modif p3 z)</code>
+</p><p><br>
+As a result of using the Template Instance pattern, one could reduce the number of data and object property axioms in the ontology. This “deflation” of the ontology is especially significant, if there are many repetitive values in the ontology, with very few changes, and if the number of properties of the reified instances is large.
+</p>
+</td></tr>
+<tr>
+<th> Reusable OWL Building Block:
+</th><td> <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&amp;link=http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_instance_odp.owl&amp;message=OWL%20building%20block&amp;from_page_id=3339&amp;update=">http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_instance_odp.owl</a> (226)
+</td></tr>
+<tr>
+<th> Consequences:
+</th><td>
+</td></tr>
+<tr>
+<th> Scenarios:
+</th><td>
+</td></tr>
+<tr>
+<th> Known Uses:
+</th><td> <a href="http://www.who.int/classifications/icd/revision/en/index.html" class="external free" title="http://www.who.int/classifications/icd/revision/en/index.html" rel="nofollow">http://www.who.int/classifications/icd/revision/en/index.html</a>, <a href="https://sites.google.com/site/whoictm/" class="external free" title="https://sites.google.com/site/whoictm/" rel="nofollow">https://sites.google.com/site/whoictm/</a>
+</td></tr>
+<tr>
+<th> Web References:
+</th><td>
+</td></tr>
+<tr>
+<th> Other References:
+</th><td>
+</td></tr>
+<tr>
+<th> Examples (OWL files):
+</th><td>
+<ul><li> <a href="http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_odp_example.zip" class="external free" title="http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_odp_example.zip" rel="nofollow">http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_odp_example.zip</a>
+</li><li> <a href="http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_instance_odp_example.zip" class="external free" title="http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_instance_odp_example.zip" rel="nofollow">http://smi-protege.stanford.edu/collab-protege/templInstPattern/template_instance_odp_example.zip</a>
+</li></ul>
+</td></tr>
+<tr>
+<th> Extracted From:
+</th><td>
+</td></tr>
+<tr>
+<th> Reengineered From:
+</th><td>
+</td></tr>
+<tr>
+<th> Has Components:
+</th><td>
+</td></tr>
+<tr>
+<th> Specialization Of:
+</th><td>
+</td></tr>
+<tr>
+<th> Related CPs:
+</th><td>
+<ul><li> <a href="http://ontologydesignpatterns.org/wiki/Submissions:Literal_Reification" title="Submissions:Literal Reification">Submissions:Literal Reification</a>
+</li></ul>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<a name="Elements"></a><h1> <span class="mw-headline">Elements</span></h1>
+<p><i>The <b>Template Instance</b> Content OP locally defines the following ontology elements:</i>
+</p>
+<a name="Additional_information"></a><h1> <span class="mw-headline">Additional information</span></h1>
+<a name="Scenarios"></a><h1> <span class="mw-headline">Scenarios</span></h1>
+<div style="margin:auto;margin-top:10px;border:1px solid #DD7300;border-left:none;border-right:none;clear:both;padding:5px;background-color:#F8E3CC">
+<div style="border-bottom:1px solid #DD7300;"><b>Scenarios about Template Instance</b></div>
+<p>No scenario is added to this Content OP.
+</p>
+</div>
+<a name="Reviews"></a><h1> <span class="mw-headline">Reviews</span></h1>
+<div style="margin:auto;border:1px solid #729F0A;border-left:none;border-right:none;clear:both;padding:5px;margin-top:10px;background-color:#E7F1CF">
+<div style="border-bottom:1px solid #729F0A;margin-bottom:10px"><b>Reviews about Template Instance</b></div>
+<table class="smwtable" id="querytable2">
+	<tbody><tr>
+		<th><a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance#" class="sortheader" onclick="smw_resortTable(this, 0);return false;"><span class="sortarrow"><img alt="[&lt;&gt;]" src="./Submissions-Template_Instance_files/sort_none.gif"></span></a>&nbsp;<span style="margin-left: 0.3em; margin-right: 1em;">Review article</span></th>
+		<th><a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance#" class="sortheader" onclick="smw_resortTable(this, 1);return false;"><span class="sortarrow"><img alt="[&lt;&gt;]" src="./Submissions-Template_Instance_files/sort_none.gif"></span></a>&nbsp;<span style="margin-left: 0.3em; margin-right: 1em;"><a href="http://ontologydesignpatterns.org/wiki/Property:CreationDate" title="Property:CreationDate">Posted on</a></span></th>
+		<th><a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance#" class="sortheader" onclick="smw_resortTable(this, 2);return false;"><span class="sortarrow"><img alt="[&lt;&gt;]" src="./Submissions-Template_Instance_files/sort_none.gif"></span></a>&nbsp;<span style="margin-left: 0.3em; margin-right: 1em;"><a href="http://ontologydesignpatterns.org/wiki/Property:ReviewAboutVersion" title="Property:ReviewAboutVersion">About revision (current is 11178)</a></span></th>
+	</tr>
+	<tr>
+		<td><a href="http://ontologydesignpatterns.org/wiki/Reviews:BenedictoRodriguezCastro_about_Template_Instance" title="Reviews:BenedictoRodriguezCastro about Template Instance">BenedictoRodriguezCastro about Template Instance</a></td>
+		<td><span class="smwsortkey">2456168</span>28 August 2012</td>
+		<td><span class="smwsortkey">11158</span>11,158</td>
+	</tr>
+	<tr>
+		<td><a href="http://ontologydesignpatterns.org/wiki/Reviews:BorisVillaz%C3%B3n-Terrazas_about_Template_Instance" title="Reviews:BorisVillazón-Terrazas about Template Instance">BorisVillazón-Terrazas about Template Instance</a></td>
+		<td><span class="smwsortkey">2456175</span>4 September 2012</td>
+		<td><span class="smwsortkey">11178</span>11,178</td>
+	</tr>
+	<tr>
+		<td><a href="http://ontologydesignpatterns.org/wiki/Reviews:MariaPoveda_about_Template_Instance" title="Reviews:MariaPoveda about Template Instance">MariaPoveda about Template Instance</a></td>
+		<td><span class="smwsortkey">2456175</span>4 September 2012</td>
+		<td><span class="smwsortkey">11178</span>11,178</td>
+	</tr>
+</tbody></table>
+<p>This revision (revision ID <b>11178</b>) takes in account the reviews: none
+</p><p>Other info at <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;action=evaluation" rel="nofollow">evaluation tab</a>
+</p>
+</div>
+<p><br>
+</p>
+<a name="Modeling_issues"></a><h1> <span class="mw-headline">Modeling issues</span></h1>
+<div style="margin:auto;border:1px solid #81125F;border-left:none;border-right:none;clear:both;padding:5px;margin-top:10px;background-color:#F0D1E6">
+<div style="border-bottom:1px solid #81125F;margin-bottom:10px"><b>Modeling issues about Template Instance</b></div>
+<p>There is no Modeling issue related to this proposal.
+</p>
+</div>
+<p><br>
+</p>
+<a name="References"></a><h1> <span class="mw-headline">References</span></h1>
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Odp:Add_reference&amp;subject=Submissions%3ATemplate+Instance" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Odp:Add_reference&amp;subject=Submissions%3ATemplate+Instance" rel="nofollow">Add a reference</a>
+</p><p><br>
+</p>
+<table class="wikitable submissionToEvent">
+<tbody><tr>
+<th> <a href="http://ontologydesignpatterns.org/wiki/Image:Timer.png" class="image" title="Timer.png"><img alt="" src="./Submissions-Template_Instance_files/46px-Timer.png" width="46" height="46" border="0"></a>
+</th><th> Submission to event
+<p><a href="http://ontologydesignpatterns.org/wiki/WOP:2012" title="WOP:2012">WOP:2012</a>
+</p>
+</th></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 415/1000000
+Post-expand include size: 17241/2097152 bytes
+Template argument size: 4943/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<div class="printfooter">
+Retrieved from "<a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance">http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance</a>"</div>
+<!-- pippo nstab-submissions - Object id #238-->			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://ontologydesignpatterns.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir="ltr"><a href="http://ontologydesignpatterns.org/wiki/Category:ProposedContentOP" title="Category:ProposedContentOP">ProposedContentOP</a></span> | <span dir="ltr"><a href="http://ontologydesignpatterns.org/wiki/Category:Submitted_to_event" title="Category:Submitted to event">Submitted to event</a></span> | <span dir="ltr"><a href="http://ontologydesignpatterns.org/wiki/Category:Review_assigned" title="Category:Review assigned">Review assigned</a></span></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-submissions" class="selected"><a href="http://ontologydesignpatterns.org/wiki/Submissions:Template_Instance">Submissions:Template Instance</a></li>
+				 <li id="ca-talk" class="new"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions_talk:Template_Instance&amp;action=edit" title="Discussion about the content page [ctrl-alt-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-form_edit"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;action=formedit">View form</a></li>
+				 <li id="ca-history"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;action=history" title="Past versions of this page. [ctrl-alt-h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:UserLogin&amp;returnto=Submissions:Template_Instance" title="You are encouraged to log in, it is not mandatory however. [ctrl-alt-o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wiki/images/ODP_Logo_LEGO_Bricks_155.png);" href="http://ontologydesignpatterns.org/wiki/Main_Page" title="Visit the Main Page [ctrl-alt-z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Main-page"><a href="http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29">Main page</a></li>
+				<li id="n-ODPA"><a href="http://ontologydesignpatterns.org/wiki/ODPA">ODPA</a></li>
+				<li id="n-List-patterns"><a href="http://ontologydesignpatterns.org/wiki/Community:ListPatterns">List patterns</a></li>
+				<li id="n-Pattern-types"><a href="http://ontologydesignpatterns.org/wiki/OPTypes">Pattern types</a></li>
+				<li id="n-Modeling-Issues"><a href="http://ontologydesignpatterns.org/wiki/Community:Main">Modeling Issues</a></li>
+				<li id="n-Domains"><a href="http://ontologydesignpatterns.org/wiki/Community:Domain">Domains</a></li>
+				<li id="n-Training"><a href="http://ontologydesignpatterns.org/wiki/Training:Main">Training</a></li>
+				<li id="n-Events"><a href="http://ontologydesignpatterns.org/wiki/Odp:Events">Events</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Contribute">
+		<h5>Contribute</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Submit-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Submissions:SubmitAPattern">Submit a pattern</a></li>
+				<li id="n-Submit-an-exemplary-ontology"><a href="http://ontologydesignpatterns.org/wiki/Ontology:Main">Submit an exemplary ontology</a></li>
+				<li id="n-Post-a-modeling-issue"><a href="http://ontologydesignpatterns.org/wiki/Community:PostModelingIssue">Post a modeling issue</a></li>
+				<li id="n-Review-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Reviews:PostReview">Review a pattern</a></li>
+				<li id="n-Feedback-about-the-portal"><a href="http://ontologydesignpatterns.org/wiki/Feedback:Main">Feedback about the portal</a></li>
+				<li id="n-Request-an-ODP-account"><a href="http://ontologydesignpatterns.org/wiki/Special:RequestAccount">Request an ODP account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Help">
+		<h5>Help</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-About-ODP"><a href="http://ontologydesignpatterns.org/wiki/Odp:About">About ODP</a></li>
+				<li id="n-What-is-a-pattern.3F"><a href="http://ontologydesignpatterns.org/wiki/Odp:WhatIsAPattern">What is a pattern?</a></li>
+				<li id="n-What-is-an-exemplary-ontology.3F"><a href="http://ontologydesignpatterns.org/wiki/Odp:Exemplary_ontology">What is an exemplary ontology?</a></li>
+				<li id="n-How-to-post-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Submissions:HowToPostAPattern">How to post a pattern</a></li>
+				<li id="n-Training"><a href="http://ontologydesignpatterns.org/wiki/Training:Main">Training</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Catalogues">
+		<h5>Catalogues</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Content-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ContentOPs">Content ODPs</a></li>
+				<li id="n-Reengineering-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ReengineeringODPs">Reengineering ODPs</a></li>
+				<li id="n-Alignment-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:AlignmentODPs">Alignment ODPs</a></li>
+				<li id="n-Logical-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:LogicalODPs">Logical ODPs</a></li>
+				<li id="n-Architectural-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ArchitecturalODPs">Architectural ODPs</a></li>
+				<li id="n-Lexico-Syntactic-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:LexicoSyntacticODPs">Lexico Syntactic ODPs</a></li>
+				<li id="n-Exemplary-Ontologies"><a href="http://ontologydesignpatterns.org/wiki/Ontology:Main">Exemplary Ontologies</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Quality_Committee">
+		<h5>Quality Committee</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Post-a-Review"><a href="http://ontologydesignpatterns.org/wiki/Reviews:PostReview">Post a Review</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Content_OP_publishers">
+		<h5>Content OP publishers</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Create-a-catalogue-entry"><a href="http://ontologydesignpatterns.org/wiki/Catalogue:CreateEntry">Create a catalogue entry</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Editorial_Board">
+		<h5>Editorial Board</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Assign-review"><a href="http://ontologydesignpatterns.org/wiki/Special:AssignReview">Assign review</a></li>
+				<li id="n-Waiting-for-review"><a href="http://ontologydesignpatterns.org/wiki/Special:WaitingForReview">Waiting for review</a></li>
+				<li id="n-Assigned-reviews"><a href="http://ontologydesignpatterns.org/wiki/Special:AssignedReviews">Assigned reviews</a></li>
+				<li id="n-Development"><a href="http://ontologydesignpatterns.org/wiki/Odp:Development">Development</a></li>
+				<li id="n-Post-news"><a href="http://ontologydesignpatterns.org/wiki/Odp:News">Post news</a></li>
+				<li id="n-Private-area"><a href="http://ontologydesignpatterns.org/wiki/Private:Main">Private area</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Administrator">
+		<h5>Administrator</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Template-List"><a href="http://ontologydesignpatterns.org/wiki/Special:Templates">Template List</a></li>
+				<li id="n-Form-list"><a href="http://ontologydesignpatterns.org/wiki/Special:Forms">Form list</a></li>
+				<li id="n-Create-a-category"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateCategory">Create a category</a></li>
+				<li id="n-Create-a-property"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateProperty">Create a property</a></li>
+				<li id="n-Create-a-template"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateTemplate">Create a template</a></li>
+				<li id="n-Create-a-form"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateForm">Create a form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-WOP">
+		<h5>WOP</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-ODPA"><a href="http://ontologydesignpatterns.org/wiki/ODPA">ODPA</a></li>
+				<li id="n-WOP-main-page"><a href="http://ontologydesignpatterns.org/wiki/WOP:Main">WOP main page</a></li>
+				<li id="n-WOP-2017"><a href="http://ontologydesignpatterns.org/wiki/WOP:2017">WOP 2017</a></li>
+				<li id="n-WOP-2016"><a href="http://ontologydesignpatterns.org/wiki/WOP:2016">WOP 2016</a></li>
+				<li id="n-WOP-2015"><a href="http://ontologydesignpatterns.org/wiki/WOP:2015">WOP 2015</a></li>
+				<li id="n-WOP-2014"><a href="http://ontologydesignpatterns.org/wiki/WOP:2014">WOP 2014</a></li>
+				<li id="n-WOP-2013"><a href="http://ontologydesignpatterns.org/wiki/WOP:2013">WOP 2013</a></li>
+				<li id="n-WOP-2012"><a href="http://ontologydesignpatterns.org/wiki/WOP:2012">WOP 2012</a></li>
+				<li id="n-WOP-2010"><a href="http://ontologydesignpatterns.org/wiki/WOP:2010">WOP 2010</a></li>
+				<li id="n-WOP-2009"><a href="http://ontologydesignpatterns.org/wiki/WOP:2009">WOP 2009</a></li>
+				<li id="n-ODP-portal"><a href="http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29">ODP portal</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://ontologydesignpatterns.org/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Odp [ctrl-alt-f]" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://ontologydesignpatterns.org/wiki/Special:WhatLinksHere/Submissions:Template_Instance" title="List of all wiki pages that link here [ctrl-alt-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://ontologydesignpatterns.org/wiki/Special:RecentChangesLinked/Submissions:Template_Instance" title="Recent changes in pages linked from this page [ctrl-alt-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://ontologydesignpatterns.org/wiki/Special:Upload" title="Upload files [ctrl-alt-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://ontologydesignpatterns.org/wiki/Special:SpecialPages" title="List of all special pages [ctrl-alt-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;printable=yes" title="Printable version of this page [ctrl-alt-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Template_Instance&amp;oldid=11178" title="Permanent link to this version of the page">Permanent link</a></li><li><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:EmailArticle&amp;ea-title=Submissions:Template%20Instance">Send by email</a></li><li id="t-smwbrowselink"><a href="http://ontologydesignpatterns.org/wiki/Special:Browse/Submissions:Template_Instance" title="Special:Browse/Submissions:Template Instance">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="./Submissions-Template_Instance_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 28 August 2012, at 16:53.</li>
+				<li id="viewcount">This page has been accessed 3,720 times.</li>
+				<li id="privacy"><a href="http://ontologydesignpatterns.org/wiki/Odp:Privacy_policy" title="Odp:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="http://ontologydesignpatterns.org/wiki/Odp:About" title="Odp:About">About Odp</a></li>
+				<li id="disclaimer"><a href="http://ontologydesignpatterns.org/wiki/Odp:General_disclaimer" title="Odp:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 3.170 secs. -->
+</body></html>

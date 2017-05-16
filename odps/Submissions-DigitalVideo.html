@@ -1,0 +1,645 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="generator" content="MediaWiki 1.13.2">
+		<meta name="keywords" content="Submissions:DigitalVideo,Digital Video ODP diagram.png,DigitalVideo/hasRangeType,DigitalVideo/hasCodingStandard,DigitalVideo/hasVideoQualityMeasurement,DigitalVideo/hasAspectRatio,DigitalVideo/hasSubtitleStream,DigitalVideo/hasEmbeddingType,DigitalVideo/hasChromaFormat,DigitalVideo/hasStream,DigitalVideo/hasBitRate">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-DigitalVideo_files/SFA_main.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-DigitalVideo_files/SMW_custom.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-DigitalVideo_files/main.css">
+		<link rel="stylesheet" type="text/css" href="./Submissions-DigitalVideo_files/style.php">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-DigitalVideo_files/fonts-min.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-DigitalVideo_files/tabview.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-DigitalVideo_files/headertabs.css">
+		<link rel="shortcut icon" href="http://ontologydesignpatterns.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://ontologydesignpatterns.org/wiki/opensearch_desc.php" title="Odp (en)">
+		<link rel="alternate" type="application/rss+xml" title="Odp RSS Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="Odp Atom Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+		<title>Submissions:DigitalVideo - Odp</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wiki/skins/common/shared.css?164";
+			@import "/wiki/skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="./Submissions-DigitalVideo_files/commonPrint.css">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wiki/skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/wiki/skins";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/wiki";
+var wgScript = "/wiki/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://ontologydesignpatterns.org";
+var wgCanonicalNamespace = "Submissions";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 500;
+var wgPageName = "Submissions:DigitalVideo";
+var wgTitle = "DigitalVideo";
+var wgAction = "view";
+var wgArticleId = "3855";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "12985";
+var wgVersion = "1.13.2";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="./Submissions-DigitalVideo_files/wikibits.js"><!-- wikibits js --></script><style type="text/css">@import "/wiki/skins/monobook/KHTMLFixes.css";</style>
+		<!-- Head Scripts -->
+<script type="text/javascript">/*<![CDATA[*/
+		
+		sfaCreateRedAsterisk=function(){
+			var redAsterisk=document.createElement('SPAN');
+			redAsterisk.setAttribute('class','sfaRedAsterisk');
+			redAsterisk.setAttribute('className','sfaRedAsterisk');
+			redAsterisk.setAttribute('title','This is a mandatory field');
+			redAsterisk.innerHTML='&#x2a;';
+			return redAsterisk;	
+		}
+		sfaCreateAdvise=function(){
+			var advise = document.createElement('DIV');
+			advise.setAttribute('class','sfaMandatoryAdvise');
+			advise.setAttribute('className','sfaMandatoryAdvise');
+			advise.innerHTML='Mandatory fields are marked by: &#x2a;';
+			return advise;	
+		}
+		sfaSetRedAsteriskForMandatoryFields = function () {
+			
+			applyRedAsterisk = function ( fields ) {
+				var hasIt=false;
+				for ( var ix in fields ) {
+					if( ! fields[ix].getAttribute ) continue;
+					
+					var type = fields[ix].getAttribute('type');
+					if( type && type.toLowerCase() == 'checkbox' ) continue;
+					var cls = fields[ix].getAttribute('class');
+					cls = cls ? cls : fields[ix].getAttribute('className');
+					
+					if( cls && cls.indexOf('mandatoryField') != -1 ){
+						hasIt=true;
+						fields[ix].parentNode.insertBefore(sfaCreateRedAsterisk(),fields[ix].nextSibling);
+					}
+				}
+				return hasIt;			
+			}
+			
+			var frms = document.getElementsByTagName( 'FORM' );
+			for(var ix in frms){
+				
+				if( ! frms[ix].getElementsByTagName ) continue;
+				frms[ix].hasAsterisk = false;
+				hasIt=new Array();
+				hasIt[0] = applyRedAsterisk( frms[ix].getElementsByTagName('SELECT') );
+				hasIt[1] = applyRedAsterisk( frms[ix].getElementsByTagName('INPUT') );
+				hasIt[2] = applyRedAsterisk( frms[ix].getElementsByTagName('TEXTAREA') );
+				hasIt[3] = applyRedAsterisk( frms[ix].getElementsByTagName('SPAN') );
+				frms[ix].hasAsterisk = (hasIt[0]||hasIt[1]||hasIt[2]||hasIt[3]) ?true:false;
+				
+				if(frms[ix].hasAsterisk && frms[ix].insertBefore) 
+					frms[ix].insertBefore(sfaCreateAdvise(), frms[ix].firstChild);
+			}
+		}
+		window.onloadFuncts.push(sfaSetRedAsteriskForMandatoryFields);
+/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/
+
+	sfaRenderListboxBag=function(_e){
+		var bag = document.createElement('span');
+		bag.setAttribute('class','sfaListboxBag');
+		bag.setAttribute('className','sfaListboxBag');
+		bag.setAttribute('id','sfaListboxBag'+_e.getAttribute('id'));
+		bag.innerHTML=sfaGetListboxValues(_e);
+		document.getElementById(_e.getAttribute('id')).parentNode.insertBefore(bag,_e);
+	}
+	sfaUpdateListboxBag=function(_e){
+		if(_e == null) _e = this;
+		document.getElementById('sfaListboxBag'+_e.getAttribute('id')).innerHTML=sfaGetListboxValues(_e);
+	}
+	sfaGetListboxValues=function(elem){
+		var svalues = "";
+		for(var opt in elem.options){
+			if(elem.options[opt] && elem.options[opt].selected == true) {
+				if(svalues!="") svalues +=", "
+				svalues +='<span id="sfaListboxBag'+ elem.options[opt].value +'">' + elem.options[opt].innerHTML + '</span>';
+			}
+		}
+		var msg = '<br><span class="sfaInlineMsg">CTRL+CLICK to add/remove elements:</span>';
+		return ( (svalues=='')? 'Nothing selected' : svalues ) + msg;
+	}
+ 	sfaInitListbox=function(){
+	 	var listboxes=document.getElementsByTagName('SELECT');
+	 	for(var ix in listboxes){
+	 		if(listboxes[ix] && listboxes[ix].getAttribute && (listboxes[ix].getAttribute('multiple')!=null)  && (listboxes[ix].multiple && listboxes[ix].multiple==true)){
+	 			sfaRenderListboxBag(listboxes[ix]);
+				listboxes[ix].setAttribute('onchange','sfaUpdateListboxBag(this)');
+				if( listboxes[ix].attachEvent )
+					listboxes[ix].onchange=sfaUpdateListboxBag;
+	 		}
+	 	}
+ 	}
+ 	window.onloadFuncts.push(sfaInitListbox);
+/*]]>*/</script>		<script type="text/javascript" src="./Submissions-DigitalVideo_files/SMW_tooltip.js"></script>
+		<script type="text/javascript" src="./Submissions-DigitalVideo_files/ajax.js"></script>
+		<script type="text/javascript" src="./Submissions-DigitalVideo_files/utilities.js"></script>		<script type="text/javascript" src="./Submissions-DigitalVideo_files/tabview-min.js"></script>		<script type="text/javascript" src="./Submissions-DigitalVideo_files/event-min.js"></script>		<script type="text/javascript" src="./Submissions-DigitalVideo_files/history-min.js"></script>		<script type="text/javascript" src="./Submissions-DigitalVideo_files/headertabs.js"></script>				<link rel="alternate" type="application/rdf+xml" title="Submissions:DigitalVideo" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ExportRDF/Submissions:DigitalVideo&amp;xmlmime=rdf">
+
+		<script type="text/javascript" src="./Submissions-DigitalVideo_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=monobook";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-500 ltr page-Submissions_DigitalVideo">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Submissions:DigitalVideo</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Odp</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo#column-one">navigation</a>, <a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo#searchInput">search</a></div>			<!-- start content -->
+			<p><br>
+</p>
+<div style="border:2px solid #DD7300;margin:auto;padding:2px;margin-bottom:10px;overflow:auto"><div style="display:none;"><div style="float:left;padding:0px;margin-right:20px;"><a href="http://ontologydesignpatterns.org/wiki/Image:Certified.png" class="image" title="Certified.png"><img alt="" src="./Submissions-DigitalVideo_files/70px-Certified.png" width="70" height="70" border="0"></a></div> <b>This pattern has been certified.</b>
+<p>Related submission, with evaluation history, can be found <strong class="selflink">here</strong>
+</p>
+</div><div style="">
+<table>
+
+<tbody><tr>
+<td><a href="http://ontologydesignpatterns.org/wiki/Image:Working.gif" class="image" title="Working.gif"><img alt="" src="./Submissions-DigitalVideo_files/70px-Working.gif" width="70" height="70" border="0"></a>
+</td><td>If you are a member of <a href="http://ontologydesignpatterns.org/wiki/QualityCommittee" title="QualityCommittee"> quality committee</a> please visit the
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;&amp;action=evaluation" rel="nofollow">evaluation section</a>
+</p><p>If you are author of this proposal or you want to contribute to this pattern's review, you can:
+</p>
+<div style="margin-left:20px;padding-left:10px; border-left:2px dotted #4c2e8d">
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;&amp;action=evaluation" rel="nofollow">ask for a review </a>
+</p><p><a href="http://ontologydesignpatterns.org/wiki/Special:AddData/Content_OP_Proposal_Open_Review_Form?Content_OP_Proposal_Review_Template[SubmittedBy]=193.10.209.201&amp;Content_OP_Proposal_Review_Template[ContentOPUnderReview]=DigitalVideo&amp;Content_OP_Proposal_Review_Template[RevisionID]=12985&amp;Content_OP_Proposal_Review_Template[CreationDate]=2017-05-16&amp;contentop=DigitalVideo">post your open review</a>
+</p><p>specify if this revision <a href="http://ontologydesignpatterns.org/wiki/Special:EditData/Takes_in_account_Review_Form/Submissions:DigitalVideo" class="external text" title="http://ontologydesignpatterns.org/wiki/Special:EditData/Takes_in_account_Review_Form/Submissions:DigitalVideo" rel="nofollow">takes in account any of the review(s)</a>
+</p><p><a href="http://ontologydesignpatterns.org/wiki/Special:AddData/Scenario_Form?Scenario_Template[ScenarioOf]=Submissions:DigitalVideo">add a new scenario for DigitalVideo</a>
+</p>
+</div>
+<p>In general, it could be useful to visit the <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;&amp;action=evaluation" rel="nofollow">evaluation section</a> to have information about the evaluation process of this proposal
+</p><p><i>Current revision ID:</i> <b>12985</b>
+</p>
+</td></tr></tbody></table></div></div>
+<a name="Graphical_representation"></a><h1> <span class="mw-headline">Graphical representation</span></h1>
+<p><b>Diagram</b>
+</p>
+<div style="margin:auto;margin-bottom:10px;border:1px dotted #3633a4; overflow:auto;text-align:center;padding:5px;">
+<p><a href="http://ontologydesignpatterns.org/wiki/Image:Digital_Video_ODP_diagram.png" class="image" title="Image:Digital_Video_ODP_diagram.png"><img alt="Image:Digital_Video_ODP_diagram.png" src="./Submissions-DigitalVideo_files/Digital_Video_ODP_diagram.png" width="1400" height="609" border="0"></a>
+</p>
+</div>
+<a name="General_description"></a><h1> <span class="mw-headline">General description</span></h1>
+<table class="contentOPTemplate">
+
+<tbody><tr>
+<th> Name:
+</th><td> DigitalVideo
+</td></tr>
+<tr>
+<th> Submitted by:
+</th><td> <a href="http://ontologydesignpatterns.org/wiki/User:PanagiotisMitzias" title="User:PanagiotisMitzias">PanagiotisMitzias</a>, <a href="http://ontologydesignpatterns.org/wiki/User:MarinaRiga" title="User:MarinaRiga">MarinaRiga</a>, <a href="http://ontologydesignpatterns.org/wiki/User:EfstratiosKontopoulos" title="User:EfstratiosKontopoulos">EfstratiosKontopoulos</a>
+</td></tr>
+<tr>
+<th> Also Known As:
+</th><td>
+</td></tr>
+<tr>
+<th> Intent:
+</th><td> The pattern intends to model digital video files, their components and other associated entities, such as codecs and containers. This pattern has been developed by <a href="http://mklab.iti.gr/" class="external text" title="http://mklab.iti.gr/" rel="nofollow">MKLab</a> at CERTH/ITI for the <a href="http://www.pericles-project.eu/" class="external text" title="http://www.pericles-project.eu/" rel="nofollow">PERICLES</a> FP7 project.
+</td></tr>
+<tr>
+<th> Domains:
+</th><td>
+<p><a href="http://ontologydesignpatterns.org/wiki/Community:Multimedia" title="Community:Multimedia">Multimedia</a>
+</p>
+</td></tr>
+<tr>
+<th> Competency Questions:
+</th><td>
+<ul><li> <i>What does a digital video file consist of?</i> A digital video file usually consists of one or more streams. These streams are compressed using codecs (coder-decoder) and wrapped into a container.
+</li></ul>
+<ul><li><i>What types of streams exist in a video file?</i> Video streams audio streams and subtitle streams. A video file has at least one video stream and may also have any number and any type of other streams.</li></ul>
+<ul><li><i>What types of codecs exist?</i> Video and audio codecs.</li></ul>
+</td></tr>
+<tr>
+<th> Solution description:
+</th><td> The pattern’s main entity is a digital video file (DigitalVideo). Appropriate object properties connect the video file with codecs, streams, containers, etc. Additionally, the model includes the most significant descriptors for all the previous notions, such as bitrate, aspect ratio, compression type, etc.
+</td></tr>
+<tr>
+<th> Reusable OWL Building Block:
+</th><td> <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&amp;link=http://mklab.iti.gr/pericles/DigitalVideo_ODP.owl&amp;message=OWL%20building%20block&amp;from_page_id=3855&amp;update=">http://mklab.iti.gr/pericles/DigitalVideo_ODP.owl</a> (147)
+</td></tr>
+<tr>
+<th> Consequences:
+</th><td> The design pattern is expected to facilitate the creation of digital video domain ontologies that will be exploited in the field of digital preservation. A well-established, comprehensible pattern will prove to be advantageous.
+</td></tr>
+<tr>
+<th> Scenarios:
+</th><td> <ul><li>The digital video is wrapped by an AVI container.</li><li>The digital video has duration 22 minutes.</li><li>The video stream is processed by the QuickTime codec.</li><li>The audio stream has bitrate 256 kbit/s.</li></ul>
+</td></tr>
+<tr>
+<th> Known Uses:
+</th><td>
+</td></tr>
+<tr>
+<th> Web References:
+</th><td>
+</td></tr>
+<tr>
+<th> Other References:
+</th><td>
+</td></tr>
+<tr>
+<th> Examples (OWL files):
+</th><td>
+</td></tr>
+<tr>
+<th> Extracted From:
+</th><td>
+</td></tr>
+<tr>
+<th> Reengineered From:
+</th><td>
+</td></tr>
+<tr>
+<th> Has Components:
+</th><td>
+</td></tr>
+<tr>
+<th> Specialization Of:
+</th><td>
+</td></tr>
+<tr>
+<th> Related CPs:
+</th><td>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<a name="Elements"></a><h1> <span class="mw-headline">Elements</span></h1>
+<p><i>The <b>DigitalVideo</b> Content OP locally defines the following ontology elements:</i>
+</p>
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>DigitalVideo</b> (owl:Class) A digital video file. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/DigitalVideo" title="Submissions:DigitalVideo/DigitalVideo">DigitalVideo</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>Codec</b> (owl:Class) A codec is a device or computer program capable of encoding or decoding a digital data stream or signal. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/Codec" title="Submissions:DigitalVideo/Codec">Codec</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>AudioCodec</b> (owl:Class) An audio codec is a device or computer program capable of coding or decoding a digital data stream of audio. 
+E.g. MP3</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/AudioCodec" title="Submissions:DigitalVideo/AudioCodec">AudioCodec</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>VideoCodec</b> (owl:Class) A video codec is an electronic circuit or software that compresses or decompresses digital video, thus converting raw (uncompressed) digital video to a compressed format or vice-versa. 
+E.g. QuickTime H.264 (Apple's implementation for H.264/MPEG-4 AVC coding format)</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/VideoCodec" title="Submissions:DigitalVideo/VideoCodec">VideoCodec</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>Stream</b> (owl:Class) A (data) stream is a sequence of digitally encoded coherent signals (packets of data or data packets) used to transmit or receive information that is in the process of being transmitted. The term stream is used here to define raw, uncompressed content (video or audio) prior to being encoded into a wrapper or after being decoded from a wrapper. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/Stream" title="Submissions:DigitalVideo/Stream">Stream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>AudioStream</b> (owl:Class) An audio stream is a stream where the carried data is audio content. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/AudioStream" title="Submissions:DigitalVideo/AudioStream">AudioStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>VideoStream</b> (owl:Class) A video stream is a stream where the carried data is video content. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/VideoStream" title="Submissions:DigitalVideo/VideoStream">VideoStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>SubtitleStream</b> (owl:Class) A subtitle stream is a stream where the carried data is subtitle content for a video. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/SubtitleStream" title="Submissions:DigitalVideo/SubtitleStream">SubtitleStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>Container</b> (owl:Class) A container or wrapper format is a metafile format whose specification describes how different elements of data and metadata coexist in a computer file. 
+E.g. Matroska (MKV), MP4, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/Container" title="Submissions:DigitalVideo/Container">Container</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>Descriptor</b> (owl:Class) Descriptors are the various elements describing a digital video, a container, a stream or a codec. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/Descriptor" title="Submissions:DigitalVideo/Descriptor">Descriptor</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>AnalogBroadcastStandard</b> (owl:Class) The video color encoding system, if the video originates from analog television broadcasts. 
+E.g. NTSC, PAL, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/AnalogBroadcastStandard" title="Submissions:DigitalVideo/AnalogBroadcastStandard">AnalogBroadcastStandard</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>AspectRatio</b> (owl:Class) The aspect ratio of an image describes the proportional relationship between its width and its height. It is commonly expressed as two numbers separated by a colon, as in 16:9. 
+E.g. 16:9, 4:3, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/AspectRatio" title="Submissions:DigitalVideo/AspectRatio">AspectRatio</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>Bit Rate</b> (owl:Class) The bitrate is the data rate for a video or audio file. Video and audio data rates are given in bits per second. 
+E.g. 2 MBits/s</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/BitRate" title="Submissions:DigitalVideo/BitRate">BitRate</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>ChromaFormat</b> (owl:Class) The chroma subsampling type. Chroma subsampling is the practice of encoding images by implementing less resolution for chroma information than for luma information, taking advantage of the human visual system's lower acuity for color differences than for luminance. 
+E.g. 4:2:0</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/ChromaFormat" title="Submissions:DigitalVideo/ChromaFormat">ChromaFormat</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>CodingStandard</b> (owl:Class) Also known as coding format or compression format. 
+E.g. H.264/MPEG-4 AVC</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/CodingStandard" title="Submissions:DigitalVideo/CodingStandard">CodingStandard</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>ColourSpaceType</b> (owl:Class) A color space is a specific organization of colors. It allows for reproducible representations of color, in both analog and digital representations. A color space may be arbitrary, with particular colors assigned to a set of physical color swatches and corresponding assigned names or numbers. 
+E.g. YUV, RGB, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/ClourSpaceType" title="Submissions:DigitalVideo/ClourSpaceType">ClourSpaceType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>CompressionType</b> (owl:Class) The type of video compression. 
+E.g. lossy, lossless or uncompressed</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/CompressionType" title="Submissions:DigitalVideo/CompressionType">CompressionType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>EmbeddingType</b> (owl:Class) The type of embedment used to attach a subtitle stream to a video. 
+E.g. hard, prerendered, soft, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/EmbeddingType" title="Submissions:DigitalVideo/EmbeddingType">EmbeddingType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>FrameRate</b> (owl:Class) Frame rate, also known as frame frequency, is the frequency (rate) at which an imaging device produces unique consecutive images called frames. The term applies equally well to film and video cameras, computer graphics, and motion capture systems. Frame rate is most often expressed in frames per second (FPS) and is also expressed in progressive scan monitors as hertz (Hz). 
+E.g. 60 FPS</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/FrameRate" title="Submissions:DigitalVideo/FrameRate">FrameRate</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>FrameSize</b> (owl:Class) The dimensions of a video's frame. 
+E.g. 1920 x 1080</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/FrameSize" title="Submissions:DigitalVideo/FrameSize">FrameSize</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>PlaybackDuration</b> (owl:Class) The duration of a video, video stream or audio stream. 
+E.g. 22 minutes</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/PlaybackDuration" title="Submissions:DigitalVideo/PlaybackDuration">PlaybackDuration</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>RangeType</b> (owl:Class) The type of range a video is created for. 
+E.g. broadcast range or full range</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/RangeType" title="Submissions:DigitalVideo/RangeType">RangeType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>SampleRate</b> (owl:Class) The audio sample rate is the number of samples of audio carried per second, measured in Hz or kHz (one kHz being 1 000 Hz). For example, 44 100 samples per second can be expressed as either 44 100 Hz, or 44.1 kHz.
+<p>The video sample rate of a digital video format determines how often the light intensity of each video line is sampled. 
+</p>
+E.g. 96 kHz, 74.25MHz, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/SampleRate" title="Submissions:DigitalVideo/SampleRate">SampleRate</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>ScanType</b> (owl:Class) Progressive or interlaced scan. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/ScanType" title="Submissions:DigitalVideo/ScanType">ScanType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>SetOfStandards</b> (owl:Class) Sets of standards standardize the format of a video stream. 
+E.g. BT.601 or BT.709</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/SetOfStandards" title="Submissions:DigitalVideo/SetOfStandards">SetOfStandards</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>E.g. SubRip, SubViewer, etc.</b> (owl:Class) The file format of subtitles. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/SubtitleTextFormat" title="Submissions:DigitalVideo/SubtitleTextFormat">SubtitleTextFormat</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>VideoCodecLevel</b> (owl:Class) A video codec level is a specified set of constraints that indicate a degree of required decoder performance for a profile. 
+E.g. 4</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/VideoCodecLevel" title="Submissions:DigitalVideo/VideoCodecLevel">VideoCodecLevel</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>VideoCodecProfile</b> (owl:Class) The video codec profile is a set of capabilities and constraints apllied in the encoder. It allows the decoder  to recognize the requirements to decode a specific stream. 
+E.g. baseline profile, extended profile, main profile, high profile, etc.</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/VideoCodecProfile" title="Submissions:DigitalVideo/VideoCodecProfile">VideoCodecProfile</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>VideoQualityMeasurement</b> (owl:Class) Measurement carried out according to the video quality metric. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/VideoQualityMeasurement" title="Submissions:DigitalVideo/VideoQualityMeasurement">VideoQualityMeasurement</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>VideoQualityMetric</b> (owl:Class) Process or software used to measure the quality of a video. 
+E.g. VQM</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/VideoQualityMetric" title="Submissions:DigitalVideo/VideoQualityMetric">VideoQualityMetric</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:Class.gif" class="image" title="Class"><img alt="Class" src="./Submissions-DigitalVideo_files/20px-Class.gif" width="20" height="20" border="0"></a> <b>YUVSampleRange</b> (owl:Class) YUV Sample Range 
+E.g. 16-235</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/YUVSampleRange" title="Submissions:DigitalVideo/YUVSampleRange">YUVSampleRange</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasBitRate</b> (owl:ObjectProperty) Associates an audio or video stream with a bit rate. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasBitRate" title="Submissions:DigitalVideo/hasBitRate">hasBitRate</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>wrappedBy</b> (owl:ObjectProperty) Associates a digital video file with a container type. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/wrappedBy" title="Submissions:DigitalVideo/wrappedBy">wrappedBy</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasStream</b> (owl:ObjectProperty) Associates a digital video with a stream. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasStream" title="Submissions:DigitalVideo/hasStream">hasStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasAudioStream</b> (owl:ObjectProperty) Associates a digital video with an audio stream. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasAudioStream" title="Submissions:DigitalVideo/hasAudioStream">hasAudioStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasVideoStream</b> (owl:ObjectProperty) Associates a digital video with a video stream. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasVideoStream" title="Submissions:DigitalVideo/hasVideoStream">hasVideoStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasSubtitleStream</b> (owl:ObjectProperty) Associates a digital video with a subtitle stream. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasSubtitleStream" title="Submissions:DigitalVideo/hasSubtitleStream">hasSubtitleStream</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasCodingStandard</b> (owl:ObjectProperty) Associates a video or audio stream with a coding standard. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasCodingStandard" title="Submissions:DigitalVideo/hasCodingStandard">hasCodingStandard</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasRangeType</b> (owl:ObjectProperty) Associates a video stream with a range type. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasRangeType" title="Submissions:DigitalVideo/hasRangeType">hasRangeType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasVideoQualityMeasurement</b> (owl:ObjectProperty) Associates a video stream with a video quality measurement. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasVideoQualityMeasurement" title="Submissions:DigitalVideo/hasVideoQualityMeasurement">hasVideoQualityMeasurement</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasChromaFormat</b> (owl:ObjectProperty) Associates a video stream with a chroma format. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasChromaFormat" title="Submissions:DigitalVideo/hasChromaFormat">hasChromaFormat</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasEmbeddingType</b> (owl:ObjectProperty) Associates a subtitle stream with an embedding type. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasEmbeddingType" title="Submissions:DigitalVideo/hasEmbeddingType">hasEmbeddingType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasAspectRatio</b> (owl:ObjectProperty) Associates a video stream with an aspect ratio. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasAspectRatio" title="Submissions:DigitalVideo/hasAspectRatio">hasAspectRatio</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasSubtitleTextFormat</b> (owl:ObjectProperty) Associates a subtitle stream with a subtitle text format. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasSubtitleTextFormat" title="Submissions:DigitalVideo/hasSubtitleTextFormat">hasSubtitleTextFormat</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasVideoQualityMetric</b> (owl:ObjectProperty) Associates a video stream with a video quality metric. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasVideoQualityMetric" title="Submissions:DigitalVideo/hasVideoQualityMetric">hasVideoQualityMetric</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasCompressionType</b> (owl:ObjectProperty) Associates a video or audio codec with a compression type. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasCompressionType" title="Submissions:DigitalVideo/hasCompressionType">hasCompressionType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasScanType</b> (owl:ObjectProperty) Associates a video stream with a scan type. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasScanType" title="Submissions:DigitalVideo/hasScanType">hasScanType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasVideoCodecProfile</b> (owl:ObjectProperty) Associates a video codec with a video codec profile. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasVideoCodecProfile" title="Submissions:DigitalVideo/hasVideoCodecProfile">hasVideoCodecProfile</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasColourSpaceType</b> (owl:ObjectProperty) Associates a video stream with a colour space type. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasColourSpaceType" title="Submissions:DigitalVideo/hasColourSpaceType">hasColourSpaceType</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasFrameSize</b> (owl:ObjectProperty) Associates a video stream with a frame size. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasFrameSize" title="Submissions:DigitalVideo/hasFrameSize">hasFrameSize</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasSetOfStandards</b> (owl:ObjectProperty) Associates a video stream with a set of standards. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasSetOfStandards" title="Submissions:DigitalVideo/hasSetOfStandards">hasSetOfStandards</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>processedBy</b> (owl:ObjectProperty) Associates a stream with a codec. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/processedBy" title="Submissions:DigitalVideo/processedBy">processedBy</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasAnalogBroadcastStandard</b> (owl:ObjectProperty) Associates a digital video with an analog broadcast standard. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasAnalogBroadcastStandard" title="Submissions:DigitalVideo/hasAnalogBroadcastStandard">hasAnalogBroadcastStandard</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasVideoCodecLevel</b> (owl:ObjectProperty) Associates a video codec with a video codec level. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasVideoCodecLevel" title="Submissions:DigitalVideo/hasVideoCodecLevel">hasVideoCodecLevel</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasFrameRate</b> (owl:ObjectProperty) Associates a video stream with a frame rate. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasFrameRate" title="Submissions:DigitalVideo/hasFrameRate">hasFrameRate</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasPlaybackDuration</b> (owl:ObjectProperty) Associates a digital video, a video stream or an audio stream with a playback duration. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasPlaybackDuration" title="Submissions:DigitalVideo/hasPlaybackDuration">hasPlaybackDuration</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasYUVSampleRange</b> (owl:ObjectProperty) Associates a video stream with a YUV sample range. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasYUVSampleRange" title="Submissions:DigitalVideo/hasYUVSampleRange">hasYUVSampleRange</a> page</i></div> 
+<div style="display:block;margin:0px;padding:0px;width:99%;"><div style="display:inline;"><a href="http://ontologydesignpatterns.org/wiki/Image:ObjectProperty.gif" class="image" title="ObjectProperty"><img alt="ObjectProperty" src="./Submissions-DigitalVideo_files/20px-ObjectProperty.gif" width="20" height="20" border="0"></a> <b>hasSampleRate</b> (owl:ObjectProperty) Associates a video stream or audio stream with a sample rate. 
+</div> <a href="http://ontologydesignpatterns.org/wiki/Image:ArrowRight.gif" class="image" title="ArrowRight.gif"><img alt="" src="./Submissions-DigitalVideo_files/11px-ArrowRight.gif" width="11" height="12" border="0"></a> <i><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo/hasSampleRate" title="Submissions:DigitalVideo/hasSampleRate">hasSampleRate</a> page</i></div> 
+<a name="Additional_information"></a><h1> <span class="mw-headline">Additional information</span></h1>
+<a name="Scenarios"></a><h1> <span class="mw-headline">Scenarios</span></h1>
+<div style="margin:auto;margin-top:10px;border:1px solid #DD7300;border-left:none;border-right:none;clear:both;padding:5px;background-color:#F8E3CC">
+<div style="border-bottom:1px solid #DD7300;"><b>Scenarios about DigitalVideo</b></div>
+<p>No scenario is added to this Content OP.
+</p>
+</div>
+<a name="Reviews"></a><h1> <span class="mw-headline">Reviews</span></h1>
+<div style="margin:auto;border:1px solid #729F0A;border-left:none;border-right:none;clear:both;padding:5px;margin-top:10px;background-color:#E7F1CF">
+<div style="border-bottom:1px solid #729F0A;margin-bottom:10px"><b>Reviews about DigitalVideo</b></div>
+<p>There is no review about this proposal.
+This revision (revision ID <b>12985</b>) takes in account the reviews: none
+</p><p>Other info at <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;action=evaluation" rel="nofollow">evaluation tab</a>
+</p>
+</div>
+<p><br>
+</p>
+<a name="Modeling_issues"></a><h1> <span class="mw-headline">Modeling issues</span></h1>
+<div style="margin:auto;border:1px solid #81125F;border-left:none;border-right:none;clear:both;padding:5px;margin-top:10px;background-color:#F0D1E6">
+<div style="border-bottom:1px solid #81125F;margin-bottom:10px"><b>Modeling issues about DigitalVideo</b></div>
+<p>There is no Modeling issue related to this proposal.
+</p>
+</div>
+<p><br>
+</p>
+<a name="References"></a><h1> <span class="mw-headline">References</span></h1>
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Odp:Add_reference&amp;subject=Submissions%3ADigitalVideo" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Odp:Add_reference&amp;subject=Submissions%3ADigitalVideo" rel="nofollow">Add a reference</a>
+</p>
+<ul><li>  The homepage of the PERICLES project that supported the development of this ODP. <small><a href="http://www.pericles-project.eu/" class="external text" title="http://www.pericles-project.eu/" rel="nofollow">Project Home Page</a> | <a href="http://ontologydesignpatterns.org/wiki/Community:References/PERICLES_project_homepage" title="Community:References/PERICLES project homepage">reference page</a></small>
+</li><li>  The paper presenting the ODP that was accepted for publication in the WOP'15 proceedings. <small><a href="http://ceur-ws.org/Vol-1461/WOP2015_pattern_abstract_4.pdf" class="external text" title="http://ceur-ws.org/Vol-1461/WOP2015_pattern_abstract_4.pdf" rel="nofollow">Workshop publication</a> | <a href="http://ontologydesignpatterns.org/wiki/Community:References/An_Ontology_Design_Pattern_for_Digital_Video" title="Community:References/An Ontology Design Pattern for Digital Video">reference page</a></small>
+</li></ul>
+<p><br>
+</p>
+<table class="wikitable submissionToEvent">
+<tbody><tr>
+<th> <a href="http://ontologydesignpatterns.org/wiki/Image:Timer.png" class="image" title="Timer.png"><img alt="" src="./Submissions-DigitalVideo_files/46px-Timer.png" width="46" height="46" border="0"></a>
+</th><th> Submission to event
+<p><a href="http://ontologydesignpatterns.org/wiki/WOP:2015" title="WOP:2015">WOP:2015</a>
+</p>
+</th></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 7801/1000000
+Post-expand include size: 85325/2097152 bytes
+Template argument size: 37093/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<div class="printfooter">
+Retrieved from "<a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo">http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo</a>"</div>
+<!-- pippo nstab-submissions - Object id #565-->			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://ontologydesignpatterns.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <span dir="ltr"><a href="http://ontologydesignpatterns.org/wiki/Category:ProposedContentOP" title="Category:ProposedContentOP">ProposedContentOP</a></span> | <span dir="ltr"><a href="http://ontologydesignpatterns.org/wiki/Category:Submitted_to_event" title="Category:Submitted to event">Submitted to event</a></span></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-submissions" class="selected"><a href="http://ontologydesignpatterns.org/wiki/Submissions:DigitalVideo">Submissions:DigitalVideo</a></li>
+				 <li id="ca-talk" class="new"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions_talk:DigitalVideo&amp;action=edit" title="Discussion about the content page [ctrl-alt-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-form_edit"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;action=formedit">View form</a></li>
+				 <li id="ca-history"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;action=history" title="Past versions of this page. [ctrl-alt-h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:UserLogin&amp;returnto=Submissions:DigitalVideo" title="You are encouraged to log in, it is not mandatory however. [ctrl-alt-o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wiki/images/ODP_Logo_LEGO_Bricks_155.png);" href="http://ontologydesignpatterns.org/wiki/Main_Page" title="Visit the Main Page [ctrl-alt-z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Main-page"><a href="http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29">Main page</a></li>
+				<li id="n-ODPA"><a href="http://ontologydesignpatterns.org/wiki/ODPA">ODPA</a></li>
+				<li id="n-List-patterns"><a href="http://ontologydesignpatterns.org/wiki/Community:ListPatterns">List patterns</a></li>
+				<li id="n-Pattern-types"><a href="http://ontologydesignpatterns.org/wiki/OPTypes">Pattern types</a></li>
+				<li id="n-Modeling-Issues"><a href="http://ontologydesignpatterns.org/wiki/Community:Main">Modeling Issues</a></li>
+				<li id="n-Domains"><a href="http://ontologydesignpatterns.org/wiki/Community:Domain">Domains</a></li>
+				<li id="n-Training"><a href="http://ontologydesignpatterns.org/wiki/Training:Main">Training</a></li>
+				<li id="n-Events"><a href="http://ontologydesignpatterns.org/wiki/Odp:Events">Events</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Contribute">
+		<h5>Contribute</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Submit-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Submissions:SubmitAPattern">Submit a pattern</a></li>
+				<li id="n-Submit-an-exemplary-ontology"><a href="http://ontologydesignpatterns.org/wiki/Ontology:Main">Submit an exemplary ontology</a></li>
+				<li id="n-Post-a-modeling-issue"><a href="http://ontologydesignpatterns.org/wiki/Community:PostModelingIssue">Post a modeling issue</a></li>
+				<li id="n-Review-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Reviews:PostReview">Review a pattern</a></li>
+				<li id="n-Feedback-about-the-portal"><a href="http://ontologydesignpatterns.org/wiki/Feedback:Main">Feedback about the portal</a></li>
+				<li id="n-Request-an-ODP-account"><a href="http://ontologydesignpatterns.org/wiki/Special:RequestAccount">Request an ODP account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Help">
+		<h5>Help</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-About-ODP"><a href="http://ontologydesignpatterns.org/wiki/Odp:About">About ODP</a></li>
+				<li id="n-What-is-a-pattern.3F"><a href="http://ontologydesignpatterns.org/wiki/Odp:WhatIsAPattern">What is a pattern?</a></li>
+				<li id="n-What-is-an-exemplary-ontology.3F"><a href="http://ontologydesignpatterns.org/wiki/Odp:Exemplary_ontology">What is an exemplary ontology?</a></li>
+				<li id="n-How-to-post-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Submissions:HowToPostAPattern">How to post a pattern</a></li>
+				<li id="n-Training"><a href="http://ontologydesignpatterns.org/wiki/Training:Main">Training</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Catalogues">
+		<h5>Catalogues</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Content-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ContentOPs">Content ODPs</a></li>
+				<li id="n-Reengineering-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ReengineeringODPs">Reengineering ODPs</a></li>
+				<li id="n-Alignment-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:AlignmentODPs">Alignment ODPs</a></li>
+				<li id="n-Logical-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:LogicalODPs">Logical ODPs</a></li>
+				<li id="n-Architectural-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ArchitecturalODPs">Architectural ODPs</a></li>
+				<li id="n-Lexico-Syntactic-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:LexicoSyntacticODPs">Lexico Syntactic ODPs</a></li>
+				<li id="n-Exemplary-Ontologies"><a href="http://ontologydesignpatterns.org/wiki/Ontology:Main">Exemplary Ontologies</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Quality_Committee">
+		<h5>Quality Committee</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Post-a-Review"><a href="http://ontologydesignpatterns.org/wiki/Reviews:PostReview">Post a Review</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Content_OP_publishers">
+		<h5>Content OP publishers</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Create-a-catalogue-entry"><a href="http://ontologydesignpatterns.org/wiki/Catalogue:CreateEntry">Create a catalogue entry</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Editorial_Board">
+		<h5>Editorial Board</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Assign-review"><a href="http://ontologydesignpatterns.org/wiki/Special:AssignReview">Assign review</a></li>
+				<li id="n-Waiting-for-review"><a href="http://ontologydesignpatterns.org/wiki/Special:WaitingForReview">Waiting for review</a></li>
+				<li id="n-Assigned-reviews"><a href="http://ontologydesignpatterns.org/wiki/Special:AssignedReviews">Assigned reviews</a></li>
+				<li id="n-Development"><a href="http://ontologydesignpatterns.org/wiki/Odp:Development">Development</a></li>
+				<li id="n-Post-news"><a href="http://ontologydesignpatterns.org/wiki/Odp:News">Post news</a></li>
+				<li id="n-Private-area"><a href="http://ontologydesignpatterns.org/wiki/Private:Main">Private area</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Administrator">
+		<h5>Administrator</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Template-List"><a href="http://ontologydesignpatterns.org/wiki/Special:Templates">Template List</a></li>
+				<li id="n-Form-list"><a href="http://ontologydesignpatterns.org/wiki/Special:Forms">Form list</a></li>
+				<li id="n-Create-a-category"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateCategory">Create a category</a></li>
+				<li id="n-Create-a-property"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateProperty">Create a property</a></li>
+				<li id="n-Create-a-template"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateTemplate">Create a template</a></li>
+				<li id="n-Create-a-form"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateForm">Create a form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-WOP">
+		<h5>WOP</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-ODPA"><a href="http://ontologydesignpatterns.org/wiki/ODPA">ODPA</a></li>
+				<li id="n-WOP-main-page"><a href="http://ontologydesignpatterns.org/wiki/WOP:Main">WOP main page</a></li>
+				<li id="n-WOP-2017"><a href="http://ontologydesignpatterns.org/wiki/WOP:2017">WOP 2017</a></li>
+				<li id="n-WOP-2016"><a href="http://ontologydesignpatterns.org/wiki/WOP:2016">WOP 2016</a></li>
+				<li id="n-WOP-2015"><a href="http://ontologydesignpatterns.org/wiki/WOP:2015">WOP 2015</a></li>
+				<li id="n-WOP-2014"><a href="http://ontologydesignpatterns.org/wiki/WOP:2014">WOP 2014</a></li>
+				<li id="n-WOP-2013"><a href="http://ontologydesignpatterns.org/wiki/WOP:2013">WOP 2013</a></li>
+				<li id="n-WOP-2012"><a href="http://ontologydesignpatterns.org/wiki/WOP:2012">WOP 2012</a></li>
+				<li id="n-WOP-2010"><a href="http://ontologydesignpatterns.org/wiki/WOP:2010">WOP 2010</a></li>
+				<li id="n-WOP-2009"><a href="http://ontologydesignpatterns.org/wiki/WOP:2009">WOP 2009</a></li>
+				<li id="n-ODP-portal"><a href="http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29">ODP portal</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://ontologydesignpatterns.org/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Odp [ctrl-alt-f]" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://ontologydesignpatterns.org/wiki/Special:WhatLinksHere/Submissions:DigitalVideo" title="List of all wiki pages that link here [ctrl-alt-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://ontologydesignpatterns.org/wiki/Special:RecentChangesLinked/Submissions:DigitalVideo" title="Recent changes in pages linked from this page [ctrl-alt-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://ontologydesignpatterns.org/wiki/Special:Upload" title="Upload files [ctrl-alt-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://ontologydesignpatterns.org/wiki/Special:SpecialPages" title="List of all special pages [ctrl-alt-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;printable=yes" title="Printable version of this page [ctrl-alt-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:DigitalVideo&amp;oldid=12985" title="Permanent link to this version of the page">Permanent link</a></li><li><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:EmailArticle&amp;ea-title=Submissions:DigitalVideo">Send by email</a></li><li id="t-smwbrowselink"><a href="http://ontologydesignpatterns.org/wiki/Special:Browse/Submissions:DigitalVideo" title="Special:Browse/Submissions:DigitalVideo">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="./Submissions-DigitalVideo_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 11 November 2016, at 10:27.</li>
+				<li id="viewcount">This page has been accessed 4,535 times.</li>
+				<li id="privacy"><a href="http://ontologydesignpatterns.org/wiki/Odp:Privacy_policy" title="Odp:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="http://ontologydesignpatterns.org/wiki/Odp:About" title="Odp:About">About Odp</a></li>
+				<li id="disclaimer"><a href="http://ontologydesignpatterns.org/wiki/Odp:General_disclaimer" title="Odp:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 9.758 secs. -->
+</body></html>

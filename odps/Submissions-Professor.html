@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0060)http://ontologydesignpatterns.org/wiki/Submissions:Professor -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="generator" content="MediaWiki 1.13.2">
+		<meta name="keywords" content="Submissions:Professor,QualityCommittee,Mazenalzyoud">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Professor_files/SFA_main.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Professor_files/SMW_custom.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Professor_files/main.css">
+		<link rel="stylesheet" type="text/css" href="./Submissions-Professor_files/style.php">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Professor_files/fonts-min.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Professor_files/tabview.css">
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="./Submissions-Professor_files/headertabs.css">
+		<link rel="shortcut icon" href="http://ontologydesignpatterns.org/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://ontologydesignpatterns.org/wiki/opensearch_desc.php" title="Odp (en)">
+		<link rel="alternate" type="application/rss+xml" title="Odp RSS Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="Odp Atom Feed" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+		<title>Submissions:Professor - Odp</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/wiki/skins/common/shared.css?164";
+			@import "/wiki/skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="./Submissions-Professor_files/commonPrint.css">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/wiki/skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/wiki/skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/wiki/skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/wiki/skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/wiki/skins";
+var wgArticlePath = "/wiki/$1";
+var wgScriptPath = "/wiki";
+var wgScript = "/wiki/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://ontologydesignpatterns.org";
+var wgCanonicalNamespace = "Submissions";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 500;
+var wgPageName = "Submissions:Professor";
+var wgTitle = "Professor";
+var wgAction = "view";
+var wgArticleId = "3960";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "en";
+var wgContentLanguage = "en";
+var wgBreakFrames = false;
+var wgCurRevisionId = "12352";
+var wgVersion = "1.13.2";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="./Submissions-Professor_files/wikibits.js"><!-- wikibits js --></script><style type="text/css">@import "/wiki/skins/monobook/KHTMLFixes.css";</style>
+		<!-- Head Scripts -->
+<script type="text/javascript">/*<![CDATA[*/
+		
+		sfaCreateRedAsterisk=function(){
+			var redAsterisk=document.createElement('SPAN');
+			redAsterisk.setAttribute('class','sfaRedAsterisk');
+			redAsterisk.setAttribute('className','sfaRedAsterisk');
+			redAsterisk.setAttribute('title','This is a mandatory field');
+			redAsterisk.innerHTML='&#x2a;';
+			return redAsterisk;	
+		}
+		sfaCreateAdvise=function(){
+			var advise = document.createElement('DIV');
+			advise.setAttribute('class','sfaMandatoryAdvise');
+			advise.setAttribute('className','sfaMandatoryAdvise');
+			advise.innerHTML='Mandatory fields are marked by: &#x2a;';
+			return advise;	
+		}
+		sfaSetRedAsteriskForMandatoryFields = function () {
+			
+			applyRedAsterisk = function ( fields ) {
+				var hasIt=false;
+				for ( var ix in fields ) {
+					if( ! fields[ix].getAttribute ) continue;
+					
+					var type = fields[ix].getAttribute('type');
+					if( type && type.toLowerCase() == 'checkbox' ) continue;
+					var cls = fields[ix].getAttribute('class');
+					cls = cls ? cls : fields[ix].getAttribute('className');
+					
+					if( cls && cls.indexOf('mandatoryField') != -1 ){
+						hasIt=true;
+						fields[ix].parentNode.insertBefore(sfaCreateRedAsterisk(),fields[ix].nextSibling);
+					}
+				}
+				return hasIt;			
+			}
+			
+			var frms = document.getElementsByTagName( 'FORM' );
+			for(var ix in frms){
+				
+				if( ! frms[ix].getElementsByTagName ) continue;
+				frms[ix].hasAsterisk = false;
+				hasIt=new Array();
+				hasIt[0] = applyRedAsterisk( frms[ix].getElementsByTagName('SELECT') );
+				hasIt[1] = applyRedAsterisk( frms[ix].getElementsByTagName('INPUT') );
+				hasIt[2] = applyRedAsterisk( frms[ix].getElementsByTagName('TEXTAREA') );
+				hasIt[3] = applyRedAsterisk( frms[ix].getElementsByTagName('SPAN') );
+				frms[ix].hasAsterisk = (hasIt[0]||hasIt[1]||hasIt[2]||hasIt[3]) ?true:false;
+				
+				if(frms[ix].hasAsterisk && frms[ix].insertBefore) 
+					frms[ix].insertBefore(sfaCreateAdvise(), frms[ix].firstChild);
+			}
+		}
+		window.onloadFuncts.push(sfaSetRedAsteriskForMandatoryFields);
+/*]]>*/</script><script type="text/javascript">/*<![CDATA[*/
+
+	sfaRenderListboxBag=function(_e){
+		var bag = document.createElement('span');
+		bag.setAttribute('class','sfaListboxBag');
+		bag.setAttribute('className','sfaListboxBag');
+		bag.setAttribute('id','sfaListboxBag'+_e.getAttribute('id'));
+		bag.innerHTML=sfaGetListboxValues(_e);
+		document.getElementById(_e.getAttribute('id')).parentNode.insertBefore(bag,_e);
+	}
+	sfaUpdateListboxBag=function(_e){
+		if(_e == null) _e = this;
+		document.getElementById('sfaListboxBag'+_e.getAttribute('id')).innerHTML=sfaGetListboxValues(_e);
+	}
+	sfaGetListboxValues=function(elem){
+		var svalues = "";
+		for(var opt in elem.options){
+			if(elem.options[opt] && elem.options[opt].selected == true) {
+				if(svalues!="") svalues +=", "
+				svalues +='<span id="sfaListboxBag'+ elem.options[opt].value +'">' + elem.options[opt].innerHTML + '</span>';
+			}
+		}
+		var msg = '<br><span class="sfaInlineMsg">CTRL+CLICK to add/remove elements:</span>';
+		return ( (svalues=='')? 'Nothing selected' : svalues ) + msg;
+	}
+ 	sfaInitListbox=function(){
+	 	var listboxes=document.getElementsByTagName('SELECT');
+	 	for(var ix in listboxes){
+	 		if(listboxes[ix] && listboxes[ix].getAttribute && (listboxes[ix].getAttribute('multiple')!=null)  && (listboxes[ix].multiple && listboxes[ix].multiple==true)){
+	 			sfaRenderListboxBag(listboxes[ix]);
+				listboxes[ix].setAttribute('onchange','sfaUpdateListboxBag(this)');
+				if( listboxes[ix].attachEvent )
+					listboxes[ix].onchange=sfaUpdateListboxBag;
+	 		}
+	 	}
+ 	}
+ 	window.onloadFuncts.push(sfaInitListbox);
+/*]]>*/</script>		<script type="text/javascript" src="./Submissions-Professor_files/SMW_tooltip.js"></script>
+		<script type="text/javascript" src="./Submissions-Professor_files/ajax.js"></script>
+		<script type="text/javascript" src="./Submissions-Professor_files/utilities.js"></script>		<script type="text/javascript" src="./Submissions-Professor_files/tabview-min.js"></script>		<script type="text/javascript" src="./Submissions-Professor_files/event-min.js"></script>		<script type="text/javascript" src="./Submissions-Professor_files/history-min.js"></script>		<script type="text/javascript" src="./Submissions-Professor_files/headertabs.js"></script>				<link rel="alternate" type="application/rdf+xml" title="Submissions:Professor" href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ExportRDF/Submissions:Professor&amp;xmlmime=rdf">
+
+		<script type="text/javascript" src="./Submissions-Professor_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/wiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/wiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=monobook";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-500 ltr page-Submissions_Professor">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Submissions:Professor</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From Odp</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="http://ontologydesignpatterns.org/wiki/Submissions:Professor#column-one">navigation</a>, <a href="http://ontologydesignpatterns.org/wiki/Submissions:Professor#searchInput">search</a></div>			<!-- start content -->
+			<p><br>
+</p>
+<div style="border:2px solid #DD7300;margin:auto;padding:2px;margin-bottom:10px;overflow:auto"><div style="display:none;"><div style="float:left;padding:0px;margin-right:20px;"><a href="http://ontologydesignpatterns.org/wiki/Image:Certified.png" class="image" title="Certified.png"><img alt="" src="./Submissions-Professor_files/70px-Certified.png" width="70" height="70" border="0"></a></div> <b>This pattern has been certified.</b>
+<p>Related submission, with evaluation history, can be found <strong class="selflink">here</strong>
+</p>
+</div><div style="">
+<table>
+
+<tbody><tr>
+<td><a href="http://ontologydesignpatterns.org/wiki/Image:Working.gif" class="image" title="Working.gif"><img alt="" src="./Submissions-Professor_files/70px-Working.gif" width="70" height="70" border="0"></a>
+</td><td>If you are a member of <a href="http://ontologydesignpatterns.org/wiki/QualityCommittee" title="QualityCommittee"> quality committee</a> please visit the
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;&amp;action=evaluation" rel="nofollow">evaluation section</a>
+</p><p>If you are author of this proposal or you want to contribute to this pattern's review, you can:
+</p>
+<div style="margin-left:20px;padding-left:10px; border-left:2px dotted #4c2e8d">
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;&amp;action=evaluation" rel="nofollow">ask for a review </a>
+</p><p><a href="http://ontologydesignpatterns.org/wiki/Special:AddData/Content_OP_Proposal_Open_Review_Form?Content_OP_Proposal_Review_Template[SubmittedBy]=193.10.209.201&amp;Content_OP_Proposal_Review_Template[ContentOPUnderReview]=Professor&amp;Content_OP_Proposal_Review_Template[RevisionID]=12352&amp;Content_OP_Proposal_Review_Template[CreationDate]=2017-05-16&amp;contentop=Professor">post your open review</a>
+</p><p>specify if this revision <a href="http://ontologydesignpatterns.org/wiki/Special:EditData/Takes_in_account_Review_Form/Submissions:Professor" class="external text" title="http://ontologydesignpatterns.org/wiki/Special:EditData/Takes_in_account_Review_Form/Submissions:Professor" rel="nofollow">takes in account any of the review(s)</a>
+</p><p><a href="http://ontologydesignpatterns.org/wiki/Special:AddData/Scenario_Form?Scenario_Template[ScenarioOf]=Submissions:Professor">add a new scenario for Professor</a>
+</p>
+</div>
+<p>In general, it could be useful to visit the <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;&amp;action=evaluation" rel="nofollow">evaluation section</a> to have information about the evaluation process of this proposal
+</p><p><i>Current revision ID:</i> <b>12352</b>
+</p>
+</td></tr></tbody></table></div></div>
+<a name="Graphical_representation"></a><h1> <span class="mw-headline">Graphical representation</span></h1>
+<p><b>Diagram</b>
+<i>(this article has no graphical representation)</i>
+</p>
+<a name="General_description"></a><h1> <span class="mw-headline">General description</span></h1>
+<table class="contentOPTemplate">
+
+<tbody><tr>
+<th> Name:
+</th><td> professor
+</td></tr>
+<tr>
+<th> Submitted by:
+</th><td> <a href="http://ontologydesignpatterns.org/wiki/User:Mazenalzyoud" title="User:Mazenalzyoud">Mazenalzyoud</a>
+</td></tr>
+<tr>
+<th> Also Known As:
+</th><td>
+</td></tr>
+<tr>
+<th> Intent:
+</th><td>
+</td></tr>
+<tr>
+<th> Domains:
+</th><td>
+</td></tr>
+<tr>
+<th> Competency Questions:
+</th><td>
+</td></tr>
+<tr>
+<th> Solution description:
+</th><td>
+</td></tr>
+<tr>
+<th> Reusable OWL Building Block:
+</th><td> <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:ClickHandler&amp;link=http://www.cs.kent.edu/~malzyoud/ODPs/Professsor.htm&amp;message=OWL%20building%20block&amp;from_page_id=3960&amp;update=">http://www.cs.kent.edu/~malzyoud/ODPs/Professsor.htm</a> (56)
+</td></tr>
+<tr>
+<th> Consequences:
+</th><td>
+</td></tr>
+<tr>
+<th> Scenarios:
+</th><td>
+</td></tr>
+<tr>
+<th> Known Uses:
+</th><td>
+</td></tr>
+<tr>
+<th> Web References:
+</th><td>
+</td></tr>
+<tr>
+<th> Other References:
+</th><td>
+</td></tr>
+<tr>
+<th> Examples (OWL files):
+</th><td>
+</td></tr>
+<tr>
+<th> Extracted From:
+</th><td>
+</td></tr>
+<tr>
+<th> Reengineered From:
+</th><td>
+</td></tr>
+<tr>
+<th> Has Components:
+</th><td>
+</td></tr>
+<tr>
+<th> Specialization Of:
+</th><td>
+</td></tr>
+<tr>
+<th> Related CPs:
+</th><td>
+</td></tr></tbody></table>
+<p><br>
+</p>
+<a name="Elements"></a><h1> <span class="mw-headline">Elements</span></h1>
+<p><i>The <b>Professor</b> Content OP locally defines the following ontology elements:</i>
+</p><p><br>
+</p>
+<a name="Additional_information"></a><h1> <span class="mw-headline">Additional information</span></h1>
+<a name="Scenarios"></a><h1> <span class="mw-headline">Scenarios</span></h1>
+<div style="margin:auto;margin-top:10px;border:1px solid #DD7300;border-left:none;border-right:none;clear:both;padding:5px;background-color:#F8E3CC">
+<div style="border-bottom:1px solid #DD7300;"><b>Scenarios about Professor</b></div>
+<p>No scenario is added to this Content OP.
+</p>
+</div>
+<a name="Reviews"></a><h1> <span class="mw-headline">Reviews</span></h1>
+<div style="margin:auto;border:1px solid #729F0A;border-left:none;border-right:none;clear:both;padding:5px;margin-top:10px;background-color:#E7F1CF">
+<div style="border-bottom:1px solid #729F0A;margin-bottom:10px"><b>Reviews about Professor</b></div>
+<p>There is no review about this proposal.
+This revision (revision ID <b>12352</b>) takes in account the reviews: none
+</p><p>Other info at <a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;action=evaluation" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;action=evaluation" rel="nofollow">evaluation tab</a>
+</p>
+</div>
+<a name="Modeling_issues"></a><h1> <span class="mw-headline">Modeling issues</span></h1>
+<div style="margin:auto;border:1px solid #81125F;border-left:none;border-right:none;clear:both;padding:5px;margin-top:10px;background-color:#F0D1E6">
+<div style="border-bottom:1px solid #81125F;margin-bottom:10px"><b>Modeling issues about Professor</b></div>
+<p>There is no Modeling issue related to this proposal.
+</p>
+</div>
+<a name="References"></a><h1> <span class="mw-headline">References</span></h1>
+<p><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Odp:Add_reference&amp;subject=Submissions%3AProfessor" class="external text" title="http://ontologydesignpatterns.org/wiki/index.php?title=Odp:Add_reference&amp;subject=Submissions%3AProfessor" rel="nofollow">Add a reference</a>
+</p><p><br>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 321/1000000
+Post-expand include size: 8346/2097152 bytes
+Template argument size: 235/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<div class="printfooter">
+Retrieved from "<a href="http://ontologydesignpatterns.org/wiki/Submissions:Professor">http://ontologydesignpatterns.org/wiki/Submissions:Professor</a>"</div>
+<!-- pippo nstab-submissions - Object id #1753-->			<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://ontologydesignpatterns.org/wiki/Special:Categories" title="Special:Categories">Category</a>: <span dir="ltr"><a href="http://ontologydesignpatterns.org/wiki/Category:ProposedContentOP" title="Category:ProposedContentOP">ProposedContentOP</a></span></div></div>			<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-submissions" class="selected"><a href="http://ontologydesignpatterns.org/wiki/Submissions:Professor">Submissions:Professor</a></li>
+				 <li id="ca-talk" class="new"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions_talk:Professor&amp;action=edit" title="Discussion about the content page [ctrl-alt-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-form_edit"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;action=formedit">View form</a></li>
+				 <li id="ca-history"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;action=history" title="Past versions of this page. [ctrl-alt-h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:UserLogin&amp;returnto=Submissions:Professor" title="You are encouraged to log in, it is not mandatory however. [ctrl-alt-o]" accesskey="o">Log in</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(/wiki/images/ODP_Logo_LEGO_Bricks_155.png);" href="http://ontologydesignpatterns.org/wiki/Main_Page" title="Visit the Main Page [ctrl-alt-z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Main-page"><a href="http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29">Main page</a></li>
+				<li id="n-ODPA"><a href="http://ontologydesignpatterns.org/wiki/ODPA">ODPA</a></li>
+				<li id="n-List-patterns"><a href="http://ontologydesignpatterns.org/wiki/Community:ListPatterns">List patterns</a></li>
+				<li id="n-Pattern-types"><a href="http://ontologydesignpatterns.org/wiki/OPTypes">Pattern types</a></li>
+				<li id="n-Modeling-Issues"><a href="http://ontologydesignpatterns.org/wiki/Community:Main">Modeling Issues</a></li>
+				<li id="n-Domains"><a href="http://ontologydesignpatterns.org/wiki/Community:Domain">Domains</a></li>
+				<li id="n-Training"><a href="http://ontologydesignpatterns.org/wiki/Training:Main">Training</a></li>
+				<li id="n-Events"><a href="http://ontologydesignpatterns.org/wiki/Odp:Events">Events</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Contribute">
+		<h5>Contribute</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Submit-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Submissions:SubmitAPattern">Submit a pattern</a></li>
+				<li id="n-Submit-an-exemplary-ontology"><a href="http://ontologydesignpatterns.org/wiki/Ontology:Main">Submit an exemplary ontology</a></li>
+				<li id="n-Post-a-modeling-issue"><a href="http://ontologydesignpatterns.org/wiki/Community:PostModelingIssue">Post a modeling issue</a></li>
+				<li id="n-Review-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Reviews:PostReview">Review a pattern</a></li>
+				<li id="n-Feedback-about-the-portal"><a href="http://ontologydesignpatterns.org/wiki/Feedback:Main">Feedback about the portal</a></li>
+				<li id="n-Request-an-ODP-account"><a href="http://ontologydesignpatterns.org/wiki/Special:RequestAccount">Request an ODP account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Help">
+		<h5>Help</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-About-ODP"><a href="http://ontologydesignpatterns.org/wiki/Odp:About">About ODP</a></li>
+				<li id="n-What-is-a-pattern.3F"><a href="http://ontologydesignpatterns.org/wiki/Odp:WhatIsAPattern">What is a pattern?</a></li>
+				<li id="n-What-is-an-exemplary-ontology.3F"><a href="http://ontologydesignpatterns.org/wiki/Odp:Exemplary_ontology">What is an exemplary ontology?</a></li>
+				<li id="n-How-to-post-a-pattern"><a href="http://ontologydesignpatterns.org/wiki/Submissions:HowToPostAPattern">How to post a pattern</a></li>
+				<li id="n-Training"><a href="http://ontologydesignpatterns.org/wiki/Training:Main">Training</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Catalogues">
+		<h5>Catalogues</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Content-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ContentOPs">Content ODPs</a></li>
+				<li id="n-Reengineering-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ReengineeringODPs">Reengineering ODPs</a></li>
+				<li id="n-Alignment-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:AlignmentODPs">Alignment ODPs</a></li>
+				<li id="n-Logical-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:LogicalODPs">Logical ODPs</a></li>
+				<li id="n-Architectural-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:ArchitecturalODPs">Architectural ODPs</a></li>
+				<li id="n-Lexico-Syntactic-ODPs"><a href="http://ontologydesignpatterns.org/wiki/Submissions:LexicoSyntacticODPs">Lexico Syntactic ODPs</a></li>
+				<li id="n-Exemplary-Ontologies"><a href="http://ontologydesignpatterns.org/wiki/Ontology:Main">Exemplary Ontologies</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Quality_Committee">
+		<h5>Quality Committee</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Post-a-Review"><a href="http://ontologydesignpatterns.org/wiki/Reviews:PostReview">Post a Review</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Content_OP_publishers">
+		<h5>Content OP publishers</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Create-a-catalogue-entry"><a href="http://ontologydesignpatterns.org/wiki/Catalogue:CreateEntry">Create a catalogue entry</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Editorial_Board">
+		<h5>Editorial Board</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Assign-review"><a href="http://ontologydesignpatterns.org/wiki/Special:AssignReview">Assign review</a></li>
+				<li id="n-Waiting-for-review"><a href="http://ontologydesignpatterns.org/wiki/Special:WaitingForReview">Waiting for review</a></li>
+				<li id="n-Assigned-reviews"><a href="http://ontologydesignpatterns.org/wiki/Special:AssignedReviews">Assigned reviews</a></li>
+				<li id="n-Development"><a href="http://ontologydesignpatterns.org/wiki/Odp:Development">Development</a></li>
+				<li id="n-Post-news"><a href="http://ontologydesignpatterns.org/wiki/Odp:News">Post news</a></li>
+				<li id="n-Private-area"><a href="http://ontologydesignpatterns.org/wiki/Private:Main">Private area</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-Administrator">
+		<h5>Administrator</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-Template-List"><a href="http://ontologydesignpatterns.org/wiki/Special:Templates">Template List</a></li>
+				<li id="n-Form-list"><a href="http://ontologydesignpatterns.org/wiki/Special:Forms">Form list</a></li>
+				<li id="n-Create-a-category"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateCategory">Create a category</a></li>
+				<li id="n-Create-a-property"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateProperty">Create a property</a></li>
+				<li id="n-Create-a-template"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateTemplate">Create a template</a></li>
+				<li id="n-Create-a-form"><a href="http://ontologydesignpatterns.org/wiki/Special:CreateForm">Create a form</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="generated-sidebar portlet" id="p-WOP">
+		<h5>WOP</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-ODPA"><a href="http://ontologydesignpatterns.org/wiki/ODPA">ODPA</a></li>
+				<li id="n-WOP-main-page"><a href="http://ontologydesignpatterns.org/wiki/WOP:Main">WOP main page</a></li>
+				<li id="n-WOP-2017"><a href="http://ontologydesignpatterns.org/wiki/WOP:2017">WOP 2017</a></li>
+				<li id="n-WOP-2016"><a href="http://ontologydesignpatterns.org/wiki/WOP:2016">WOP 2016</a></li>
+				<li id="n-WOP-2015"><a href="http://ontologydesignpatterns.org/wiki/WOP:2015">WOP 2015</a></li>
+				<li id="n-WOP-2014"><a href="http://ontologydesignpatterns.org/wiki/WOP:2014">WOP 2014</a></li>
+				<li id="n-WOP-2013"><a href="http://ontologydesignpatterns.org/wiki/WOP:2013">WOP 2013</a></li>
+				<li id="n-WOP-2012"><a href="http://ontologydesignpatterns.org/wiki/WOP:2012">WOP 2012</a></li>
+				<li id="n-WOP-2010"><a href="http://ontologydesignpatterns.org/wiki/WOP:2010">WOP 2010</a></li>
+				<li id="n-WOP-2009"><a href="http://ontologydesignpatterns.org/wiki/WOP:2009">WOP 2009</a></li>
+				<li id="n-ODP-portal"><a href="http://ontologydesignpatterns.org/wiki/Ontology_Design_Patterns_._org_%28ODP%29">ODP portal</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://ontologydesignpatterns.org/wiki/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" type="text" title="Search Odp [ctrl-alt-f]" accesskey="f" value="">
+				<input type="submit" name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists">&nbsp;
+				<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text">
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://ontologydesignpatterns.org/wiki/Special:WhatLinksHere/Submissions:Professor" title="List of all wiki pages that link here [ctrl-alt-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://ontologydesignpatterns.org/wiki/Special:RecentChangesLinked/Submissions:Professor" title="Recent changes in pages linked from this page [ctrl-alt-k]" accesskey="k">Related changes</a></li>
+<li id="t-upload"><a href="http://ontologydesignpatterns.org/wiki/Special:Upload" title="Upload files [ctrl-alt-u]" accesskey="u">Upload file</a></li>
+<li id="t-specialpages"><a href="http://ontologydesignpatterns.org/wiki/Special:SpecialPages" title="List of all special pages [ctrl-alt-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;printable=yes" title="Printable version of this page [ctrl-alt-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Submissions:Professor&amp;oldid=12352" title="Permanent link to this version of the page">Permanent link</a></li><li><a href="http://ontologydesignpatterns.org/wiki/index.php?title=Special:EmailArticle&amp;ea-title=Submissions:Professor">Send by email</a></li><li id="t-smwbrowselink"><a href="http://ontologydesignpatterns.org/wiki/Special:Browse/Submissions:Professor" title="Special:Browse/Submissions:Professor">Browse properties</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="./Submissions-Professor_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> This page was last modified on 20 September 2015, at 19:35.</li>
+				<li id="viewcount">This page has been accessed 506 times.</li>
+				<li id="privacy"><a href="http://ontologydesignpatterns.org/wiki/Odp:Privacy_policy" title="Odp:Privacy policy">Privacy policy</a></li>
+				<li id="about"><a href="http://ontologydesignpatterns.org/wiki/Odp:About" title="Odp:About">About Odp</a></li>
+				<li id="disclaimer"><a href="http://ontologydesignpatterns.org/wiki/Odp:General_disclaimer" title="Odp:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 3.281 secs. -->
+</body></html>
