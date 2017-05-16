@@ -1,7 +1,7 @@
 # Mirror of ODP Portal
 
-This repository contains a mirror of the list of Content Ontology Design Patterns hosted at http://ontologydesignpatterns.org/wiki/Submissions:ContentOPs.
-The content is intended to be used in case of lack of Internet connectivity at the [http://ontologydesignpatterns.org/wiki/Training:Tutorial:_Modular_Ontology_Modeling_with_Ontology_Design_Patterns_at_ESWC2017](Modular Ontology Modeling with Ontology Design Patterns Tutorial) at [http://2017.eswc-conferences.org/](ESWC2017)
+This repository contains a mirror of the official list of [Content Ontology Design Patterns](http://ontologydesignpatterns.org/wiki/Submissions:ContentOPs) hosted at [OntologyDesignPatterns.org](http://ontologydesignpatterns.org).
+The content is intended to be used in case of lack of Internet connectivity at the [Modular Ontology Modeling with Ontology Design Patterns Tutorial](http://ontologydesignpatterns.org/wiki/Training:Tutorial:_Modular_Ontology_Modeling_with_Ontology_Design_Patterns_at_ESWC2017) at [ESWC2017](http://2017.eswc-conferences.org/)
 
 This mirror was generated as follows.
 
